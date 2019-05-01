@@ -1,29 +1,23 @@
-body, header, .start {
+body {
+    background-color: white;
     margin: 0;
     padding:  0;
 }
 
-body {
-    position: absolute;
-}
-
 header {
-    background-color: #222222;
+    background-color: black;
     height: 100px;
-    /*margin-top: -22px;*/
     position: fixed;
     width: 100%;
 }
 
 .logo {
     display: block;
-    color: white;
+    color: #c3c3c3;
     font-size: 24px;
-    /*margin: 40px 60px; сдвигает мой ul, из-за флоата, скорее всего, но клиар не помогает. */
 }
 
 ul {
-    /*не понимаю, как они по центру спозиционировались*/
     display: flex;
     float: right;
     justify-content: space-around;
@@ -32,46 +26,91 @@ ul {
     width: 30%;
 }
 li {
-    border-color: darkorange;
+    border-color: #fcac45;
     border-width: 2px;
     display: block;
     margin: 1%;
     padding: 5px;
-
 }
 
 a{
-    color: white;
+    color: #c3c3c3;
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
 }
-a:active {
+a:hover {
     color: white;
 }
 
 .home {
-    background-color: black;
+    background-color: #111111;
     height: 100vh;
     width: 100%;
 }
 
 .home-text {
-    color: white;
-    display: block;
-    /*margin-top: 30%;*/
+    color: #c3c3c3;
     text-align: center;
 }
 
+.home a {
+    height: 50px;
+    width: 50px;
+}
+
+.home button {
+    background-color: #111111;
+    background-image: url("images/arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #c3c3c3;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
 
 .about {
-    background-color: beige;
-    height: 600px;
+    height: 611px;
     width: 100%;
 }
 
 .team {
-    background-color: black;
-    height: 600px;
+    background-color: #111111;
+    height: 726px;
+    width: 100%;
+}
+
+.services  {
+    height: 736px;
+    width: 100%;
+}
+
+.clients {
+    background-color: #111111;
+    height: 520px;
+    width: 100%;
+}
+
+.portfolio {
+    height: 1334px;
+    width: 100%;
+}
+
+.testimonials {
+    background-color: #111111;
+    height: 560px;
+    width: 100%;
+}
+
+.contact {
+    height: 836px;
+    width: 100%;
+}
+
+footer {
+    background-color: #222222;
+    border-bottom: 2px solid #3f3f3f;
+    height: 92px;
     width: 100%;
 }
