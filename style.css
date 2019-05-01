@@ -56,6 +56,7 @@ a:hover {
 .home-text {
     color: #c3c3c3;
     text-align: center;
+    padding-top: 100px;
 }
 /*модифицировал а в блочный елемент и используем стии для а как для кнопки*/
 .home a {
@@ -67,7 +68,7 @@ a:hover {
     border: 2px solid #c3c3c3;
     border-radius: 50%;
     /*использую маргин авто для позиционирования по центру но 400рх для вертикали*/
-    margin: 400px auto;
+    margin: 250px auto;
     height: 50px;
     width: 50px;
 }
