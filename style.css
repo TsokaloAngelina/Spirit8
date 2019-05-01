@@ -5,6 +5,8 @@ body {
 }
 
 header {
+    /*top:0  что бы небыло зазора*/
+    top: 0;
     background-color: black;
     height: 100px;
     position: fixed;
@@ -45,6 +47,8 @@ a:hover {
 
 .home {
     background-color: #111111;
+    /*Добавляю отступ от верха на высоту равную шапке*/
+    margin-top: 100px;
     height: 100vh;
     width: 100%;
 }
@@ -53,19 +57,17 @@ a:hover {
     color: #c3c3c3;
     text-align: center;
 }
-
+/*модифицировал а в блочный елемент и используем стии для а как для кнопки*/
 .home a {
-    height: 50px;
-    width: 50px;
-}
-
-.home button {
+    display: block;
     background-color: #111111;
     background-image: url("images/arrow.png");
     background-position: center;
     background-repeat: no-repeat;
     border: 2px solid #c3c3c3;
     border-radius: 50%;
+    /*использую маргин авто для позиционирования по центру но 400рх для вертикали*/
+    margin: 400px auto;
     height: 50px;
     width: 50px;
 }
